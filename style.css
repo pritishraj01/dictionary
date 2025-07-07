@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #EFC88B;
+}
+
+.container {
+    height: 70vh;
+    width: 60vw;
+    background-color: #CF5C36;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+}
+
+@media(max-width:1000px){
+    .container{
+        width: 80vw;
+        padding-left: 10px;
+    }
+}
+
+.heading p {
+    text-align: center;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    text-decoration: underline;
+    margin-bottom: 3rem;
+}
+
+@media(max-width:1000px){
+    .heading p{
+        font-size: 1.5rem;
+    }
+}
+
+.search-box {
+    margin-bottom: 4rem;
+}
+
+.search-box p {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.search-box input {
+    height: 3rem;
+    width: 50%;
+    padding: 0rem 1rem;
+    font-size: 1.2rem;
+    font-family: "Edu SA Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-right: 1rem;
+}
+
+.search-box #search-btn {
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: 2px solid black;
+    transition: all 0.1s ease;
+}
+
+@media(max-width:1000px){
+    .search-box #search-btn{
+        font-size: 0.5rem;
+    }
+}
+
+.search-box #search-btn:hover {
+    cursor: pointer;
+    background-color: #2EC4B6;
+}
+
+.msg {
+    height: 50%;
+    width: 96%;
+    background-color: #D3D5D7;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+}
+
+.label {
+    text-decoration: underline;
+    font-weight: bold;
+    color: black;
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
+.content {
+    color: #555;
+    font-weight: normal;
+    font-size: 2rem;
+}
